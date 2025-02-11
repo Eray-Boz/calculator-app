@@ -1,0 +1,151 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-color: black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 40px rgb(255, 255, 0),
+                    0 0 80px rgb(255, 255, 0),
+                    0 0 120px rgba(255, 255, 0, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 40px rgb(0, 35, 163),
+                    0 0 80px rgb(0, 35, 163),
+                    0 0 120px rgba(0, 35, 163, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 40px rgb(255, 255, 0),
+                    0 0 80px rgb(255, 255, 0),
+                    0 0 120px rgba(255, 255, 0, 0.8);
+    }
+}
+
+.calculator {
+    position: relative;
+    padding: clamp(15px, 3vw, 22px);
+    border-radius: 15px;
+    background-color: rgb(255, 255, 0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    width: clamp(320px, 85vw, 420px);
+}
+
+.calculator.glow {
+    animation: glowEffect 5s ease-in-out;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: clamp(10px, 2vw, 18px);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 0);
+    color: rgb(0, 35, 163);
+    font-family: "Orbitron", serif;
+    font-size: clamp(18px, 3vw, 26px);
+    transition: all 0.3s ease;
+    aspect-ratio: 1;
+} 
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: clamp(30px, 8vw, 50px);
+    height: clamp(30px, 8vw, 50px);
+    background-color: rgb(10, 184, 35);
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    z-index: 0;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:active::before {
+    background-color: rgb(10, 255, 35);
+}
+
+button span, #backspace-icon {
+    position: relative;
+    z-index: 1;
+}
+
+button:first-child span {
+    color: rgb(218, 0, 67);
+}
+
+.display-container {
+    padding: clamp(10px, 2vw, 15px);
+    margin-bottom: clamp(5px, 1vw, 10px);
+}
+
+input {
+    width: 100%;
+    padding: clamp(10px, 2vw, 15px);
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 35, 163);
+    color: white;
+    font-family: "Orbitron", serif;
+    font-size: clamp(18px, 2vw, 23px);
+    font-weight: 300;
+    text-align: right;
+    box-sizing: border-box;
+    --placeholder-color: white;
+}
+
+input::placeholder {
+    color: var(--placeholder-color);
+    opacity: 1;
+}
+
+#logo {
+    height: clamp(20px, 4vw, 30px);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.logo-container {
+    position: absolute;
+    left: clamp(8px, 2vw, 10px);
+    top: clamp(8px, 2vw, 10px);
+}
+
+#backspace-icon {
+    width: clamp(18px, 5vw, 28px);
+    height: clamp(18px, 5vw, 28px);
+    fill: rgb(218, 0, 67);
+}
+
+#darkmode-icon {
+    cursor: pointer;
+    position: absolute;
+    top: clamp(10px, 2vw, 12px);
+    right: clamp(10px, 2vw, 12px);
+    width: clamp(25px, 5vw, 40px);
+    height: auto;
+    fill: white;
+    user-select: none;
+    -webkit-user-select: none;
+}

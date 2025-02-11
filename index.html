@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <title>Fenerbahçe Calculator</title>
+</head>
+<body>
+    <svg id="darkmode-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm40-83q119-15 199.5-104.5T800-480q0-123-80.5-212.5T520-797v634Z"/></svg>
+<div class="calculator">
+    <div class="logo-container">
+        <img src="logo/Fenerbahçe_SK.png" alt="Fenerbahçe Logo" id="logo">
+    </div>
+    <div class="display-container">
+        <input type="text" placeholder="0" disabled id="display">
+    </div>
+    <div class="buttons">
+        <button><span>AC</span></button>
+        <button><span>(</span></button>
+        <button><span>)</span></button>
+        <button><span>/</span></button>
+        <button><span>7</span></button>
+        <button><span>8</span></button>
+        <button><span>9</span></button>
+        <button><span>*</span></button>
+        <button><span>4</span></button>
+        <button><span>5</span></button>
+        <button><span>6</span></button>
+        <button><span>-</span></button>
+        <button><span>1</span></button>
+        <button><span>2</span></button>
+        <button><span>3</span></button>
+        <button><span>+</span></button>
+        <button>
+            <svg id="backspace-icon" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                <path d="m456-320 104-104 104 104 56-56-104-104 104-104-56-56-104 104-104-104-56 56 104 104-104 104 56 56Zm-96 160q-19 0-36-8.5T296-192L80-480l216-288q11-15 28-23.5t36-8.5h440q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H360ZM180-480l180 240h440v-480H360L180-480Zm400 0Z"/>
+            </svg>
+        </button>
+        <button><span>0</span></button>
+        <button><span><b>.</b></span></button>
+        <button><span>=</span></button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
