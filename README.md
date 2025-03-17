@@ -2,7 +2,7 @@
 
 A modern and aesthetic web-based calculator application customized with Fenerbahçe colors.
 
-## 🌟 Features
+## Features
 
 - **Fenerbahçe Colors**: Yellow-navy blue color theme
 - **Dark/Light Mode**: User-friendly theme switching
@@ -11,28 +11,34 @@ A modern and aesthetic web-based calculator application customized with Fenerbah
 - **Responsive Design**: Adaptable to all screen sizes
 - **Keyboard Support**: Full keyboard support for quick usage
 
-## ⌨️ Keyboard Shortcuts
+## Keyboard Shortcuts
 
 - `Enter`: Performs calculation (=)
 - `Escape`: Clears the display (AC)
 - `Backspace`: Deletes the last character
 - Numbers and operators can be entered directly from keyboard
 
-## 🎨 Design Features
+## Design Features
 
 - Modern appearance with Orbitron font
 - Button hover effects
 - Smooth transition animations
 - Full-screen view support
 
-## 🛠️ Technologies
+## Screenshots
+
+![Screenshot](Screenshots/ss1.png)
+
+![Screenshot](Screenshots/ss2.png)
+
+## Technologies
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
 - Google Fonts (Orbitron)
 
-## 💻 Usage
+## Usage
 
 1. Open the calculator
 2. Enter numbers and operators (using mouse or keyboard)
@@ -41,7 +47,7 @@ A modern and aesthetic web-based calculator application customized with Fenerbah
 5. Click the theme icon in the top right corner to switch themes
 6. Click the Fenerbahçe logo in the top left corner to see the animation
 
-## 🎯 Special Features
+## Special Features
 
 - Design reflecting Fenerbahçe spirit with yellow-navy blue color theme
 - Special 5-second glow animation on logo click
